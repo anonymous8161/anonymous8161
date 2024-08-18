@@ -1,0 +1,45 @@
+# conf/config.yaml
+
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+name: tongue_classification_fold1
+model_type: ViT-B_16
+pretrained_dir: imagenet21k_ViT-B_16.npz
+pretrained_model:
+output_dir: ./output/fold1
+img_size: 224
+train_batch_size: 32
+eval_batch_size: 64
+eval_every: 100
+n_gpu: 1
+device: 'cuda'
+learning_rate: 0.001
+weight_decay: 0
+num_steps: 10000
+warmup_steps: 500
+max_grad_norm: 1.0
+lr_gamma: 0.1
+smoothing_value: 0.0
+local_rank: -1
+seed: 42
+gradient_accumulation_steps: 1
+lr_step_size: 20
+num_epochs: 41
+num_workers: 4
+num_classes: 8
+
+# 数据路径配置
+data:
+  train_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/train_fold1.csv'
+  val_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/val_fold1.csv'
+  img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_seg/'
+  batch_size: 64
+  num_workers: 4
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

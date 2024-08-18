@@ -1,0 +1,15 @@
+model_type: "ViT-B_16"
+img_size: 224
+smoothing_value: 0.0
+
+data:
+  train_csv: "/ssd/datasets/tongue/five_fold_split/cross_validation/train_fold1.csv"
+  test_csv: "/ssd/datasets/tongue/five_fold_split/cross_validation/test.csv"
+  img_dir: "/ssd/datasets/tongue/five_fold_split/dataset_seg/"
+  batch_size: 32
+  num_workers: 4
+
+best_model_path: "./output/fold5/tongue_classification_fold5_best.pth"
+
+# 其他可能需要的配置参数
+seed: 42
