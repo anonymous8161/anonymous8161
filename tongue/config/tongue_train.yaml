@@ -1,0 +1,22 @@
+data:
+  train_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/train_fold5.csv'
+  val_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/val_fold5.csv'
+  whole_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align/'
+  body_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align_body/'
+  edge_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align_edge/'
+  batch_size: 32
+  num_workers: 8
+
+model:
+  num_classes: 8
+
+optimizer:
+  lr: 0.00024
+  weight_decay: 0.01
+
+training:
+  num_epochs: 50
+  save_dir: "checkpoints/tongue_fold5"
+
+seed: 5201314
+mode: "train"

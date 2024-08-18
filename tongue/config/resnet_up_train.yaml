@@ -1,0 +1,20 @@
+data:
+  train_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/train_fold5.csv'
+  val_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/val_fold5.csv'
+  img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_up/'
+  batch_size: 64
+  num_workers: 8
+
+model:
+  num_classes: 8
+
+optimizer:
+  lr: 0.0005
+  weight_decay: 0.01
+
+training:
+  num_epochs: 33
+  save_dir: "checkpoints/up_fold5"
+  
+seed: 5201314
+mode: "train" 

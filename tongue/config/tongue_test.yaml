@@ -1,0 +1,16 @@
+data:
+  val_csv: '/ssd/datasets/tongue/five_fold_split/cross_validation/test.csv'
+  whole_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align/'
+  body_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align_body/'
+  edge_img_dir: '/ssd/datasets/tongue/five_fold_split/dataset_align_edge/'
+  batch_size: 1
+  num_workers: 1
+
+model:
+  num_classes: 8 
+
+training:
+  save_dir: 'checkpoints/tongue_fold1'
+
+seed: 5201314
+mode: "test"
