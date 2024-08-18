@@ -38,7 +38,7 @@ def process_images(input_folder, output_folder):
     print(f"Processing completed. Total images: {total_count}, Successfully processed: {successful_count}")
 
 if __name__ == "__main__":
-    input_folder = "seg_cropped_images"  # 替换为您的输入文件夹路径
-    output_folder = "seg_cropped_images_align"  # 替换为您想要保存处理后图像的文件夹路径
+    input_folder = "seg_cropped_images"  
+    output_folder = "seg_cropped_images_align"  
     
     process_images(input_folder, output_folder)
