@@ -18,5 +18,5 @@ This repository contains the main experimental code for our tongue analysis proj
    - Various baseline networks
    - Our SignNet implementation (tongue/run_tongue.py)
    - Configuration files (tongue/config)
-   - Evaluation code (tongue/metrics and tongue/roc)
+   - Evaluation code (tongue/metrics and tongue; tongue/roc)
    - Miscellaneous code (tongue/others)
