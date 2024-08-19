@@ -1,7 +1,5 @@
 anonymous#8161 
 
-# Tongue Analysis Project
-
 This repository contains the main experimental code for our tongue analysis project. Please note that the code for GroundingDINO and SAM is not included here.
 
 ## Repository Structure
